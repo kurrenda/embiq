@@ -18,8 +18,7 @@ To destroy container run file
 * pip
 
 1. Rename .env-example to .env
-2. Rename .env-example to .env
-3. In project directory:
+2. In project directory:
 
 #### Unix
 ```
@@ -35,3 +34,7 @@ $ .\venv\Scripts\activate
 $ pip install -r /path/to/requirements.txt
 $ python3 manage.py runserver
 ```
+
+## Swagger
+Added swagger documentation on **'/swagger'** endpoint
+
