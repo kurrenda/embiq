@@ -1,5 +1,4 @@
 import openpyxl
-
 from openpyxl.cell import cell as openpyxl_cell
 
 
@@ -50,10 +49,6 @@ class ExcelCalc():
     def _get_header_info(worksheet, input_column_names):
         row_count = worksheet.sheet.max_row
 
-        # for column_name in input_columns:
-        #     column = Column(column_name)
-        #     columns.append(column)
-
         for input_col_name in input_column_names:
             for worksheet_row in worksheet.sheet.iter_rows(1, row_count):
                 for worksheet_col in worksheet_row:
@@ -93,7 +88,7 @@ class ExcelCalc():
                         column_name = column.name
 
                     stat = {
-                            "column_name": column_name,
+                            "column": column_name,
                             "sum": stat.sum,
                             "avg": stat.avg
                     }
@@ -137,7 +132,7 @@ class ExcelCalc():
                     first_cell_coords = None
                     for cell in col:
                         if cell.data_type == openpyxl_cell.TYPE_NUMERIC:
-                            if cell.value:
+                            if cell.value is not None:
                                 if cell_sum is None:
                                     first_cell_coords = cell.coordinate
                                     cell_sum = 0
@@ -151,7 +146,6 @@ class ExcelCalc():
                         sum=cell_sum,
                         quantity=cell_count
                     )
-
                     column.stats.append(stats)
 
 
