@@ -56,20 +56,20 @@ Added swagger documentation on **'/docs'** endpoint
 Authentication via Github Ouath2
 Endpoints require token authentication in header
 ```
-$ Authorization: Token XXXXXXXXX
+Authorization: Token XXXXXXXXX
 ```
 Getting token form endpoint:
 ```
-$ /auth/github/token/
+/auth/github/token/
 ```
 
 ## Github OAuth2 Configuration
 Register a new OAuth application in github:
 1. Set "Homepage URL" and "Application name"
-2. Set callback url:
+2. Set callback url:  
 Example:
 ```
-$ http://127.0.0.1:8000/auth/github/callback
+http://127.0.0.1:8000/auth/github/callback
 ```
 2. Generate CLIENT_ID and SECRET
 
