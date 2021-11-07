@@ -53,7 +53,7 @@ $ python3 manage.py runserver 127.0.0.1:8000
 Added swagger documentation on **'/docs'** endpoint
 
 ## Authentication
-Authentication via Github Ouath2
+Authentication via Github Ouath2  
 Endpoints require token authentication in header
 ```
 Authorization: Token XXXXXXXXX
