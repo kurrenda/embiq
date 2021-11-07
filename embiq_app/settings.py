@@ -94,11 +94,11 @@ WSGI_APPLICATION = 'embiq_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'embiq_db',
-        'PORT': 5432,
+        'NAME': os.environ.get('DB_NAME', default=''),
+        'USER': os.environ.get('DB_USER', default=''),
+        'PASSWORD': os.environ.get('DB_PASSWORD', default=''),
+        'HOST': os.environ.get('DB_HOST', default=''),
+        'PORT': os.environ.get('DB_PORT', default=5432),
     }
 }
 
