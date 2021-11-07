@@ -2,7 +2,8 @@
 Github projects managment
 
 ## Setup 
-
+The application is not configured to serve static files.
+Make sure you have set variable "DEBUG=False" in .env to work with documentaion endpoint
 ### Docker
 Docker version 20.10.8, build 3967b7d
 
