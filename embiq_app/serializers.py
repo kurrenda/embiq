@@ -8,7 +8,7 @@ from embiq_app import models
 class GithubProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.GithubProject
-        fields = ("name", "url")
+        fields = ("url",)
 
     def validate_url(self, value):
         parsed_url = urlparse(value)
