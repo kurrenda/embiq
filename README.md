@@ -52,9 +52,11 @@ Added swagger documentation on **'/docs'** endpoint
 ## Authentication
 Authentication via Github Ouath2
 Endpoints require token authentication in header
+```
 $ Authorization: Token XXXXXXXXX
-
+```
 Getting token form endpoint:
+```
 $ /auth/github/token/
-
+```
 
