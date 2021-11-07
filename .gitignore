@@ -1,3 +1,6 @@
 .env
 TODO
 venv
+data
+conf.py
+__pycache__*

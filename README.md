@@ -1,11 +1,14 @@
-# Recruitment task Iteo
+# Recruitment task Embiq
 Computing sum and average values for applied columns
 
 ## Setup 
 
 ### Docker
+Docker version 20.10.8, build 3967b7d
+
 1. Rename .env-example to .env
-2. Run shell script ./Docker/run.sh to setup Docker container
+2. Go to Docker directory.
+2. Run shell script ./run.sh to setup Docker container
 3. Application will be working on host: http://127.0.0.1:8000/ or http://0.0.0.0:8000/
 
 To destroy container run shell script file 
