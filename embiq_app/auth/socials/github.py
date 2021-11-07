@@ -1,11 +1,11 @@
 
 from django.shortcuts import redirect, reverse
+from django.http import JsonResponse
 
 from allauth.socialaccount.providers.github.views import GitHubOAuth2Adapter
 from allauth.socialaccount.providers.oauth2.client import OAuth2Client
 from dj_rest_auth.registration.views import SocialLoginView
 from rest_framework.views import APIView
-from rest_framework.response import Response
 
 
 class GitHubLogin(SocialLoginView):
@@ -19,7 +19,7 @@ class GitHubLogin(SocialLoginView):
         self.serializer.is_valid(raise_exception=True)
 
         self.login()
-        return Response({'token': str(self.token)})
+        return JsonResponse({'token': str(self.token)})
 
     @property
     def callback_url(self):
