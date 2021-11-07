@@ -65,12 +65,14 @@ $ /auth/github/token/
 
 ## Github OAuth2 Configuration
 Register a new OAuth application in github:
-1. Set callback url:
+1. Set "Homepage URL" and "Application name"
+2. Set callback url:
+Example:
 ```
-$ auth/github/callback
+$ http://127.0.0.1:8000/auth/github/callback
 ```
-3. Generate CLIENT_ID and SECRET
-4. Complete GITHUB_CLIENT_ID and GITHUB_SECRET in .env
-5. 
+2. Generate CLIENT_ID and SECRET
+
+Update .env variables GITHUB_CLIENT_ID and GITHUB_SECRET
 
 
