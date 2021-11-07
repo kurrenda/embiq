@@ -7,9 +7,10 @@ Github projects managment
 Docker version 20.10.8, build 3967b7d
 
 1. Rename .env-example to .env
-2. Go to Docker directory.
-2. Run shell script ./run.sh to setup Docker container
-3. Application will be working on host: http://127.0.0.1:8000/ (if it is busy you can change it in docker-compose.yml)
+2. Complete the variables in .env
+3. Go to Docker directory.
+4. Run shell script ./run.sh to setup Docker container
+5. Application will be working on host: http://127.0.0.1:8000/ (if it is busy you can change it in docker-compose.yml)
 
 To destroy container run shell script file 
 ```
@@ -20,8 +21,10 @@ To destroy container run shell script file
 * Python3
 * pip
 
+#### Pre-config
 1. Rename .env-example to .env
-2. In project directory:
+2. Complete the variables in .env
+3. In project directory:
 
 #### Unix
 ```
@@ -59,4 +62,15 @@ Getting token form endpoint:
 ```
 $ /auth/github/token/
 ```
+
+## Github OAuth2 Configuration
+Register a new OAuth application in github:
+1. Set callback url:
+```
+$ auth/github/callback
+```
+3. Generate CLIENT_ID and SECRET
+4. Complete GITHUB_CLIENT_ID and GITHUB_SECRET in .env
+5. 
+
 
