@@ -2,13 +2,13 @@
 Github projects managment
 
 ## Setup 
-The application is not configured to serve static files.
-Make sure you have set variable "DEBUG=False" in .env to work with documentaion endpoint
+The project is not configured to serve static files.
+Make sure you have set variable "DEBUG=True" in .env to work with documentaion endpoint
 ### Docker
 Docker version 20.10.8, build 3967b7d
 
 1. Rename .env-example to .env
-2. Complete the variables in .env
+2. Setup the variables in .env
 3. Go to Docker directory.
 4. Run shell script ./run.sh to setup Docker container
 5. Application will be working on host: http://127.0.0.1:8000/ (if it is busy you can change it in docker-compose.yml)
@@ -24,7 +24,7 @@ To destroy container run shell script file
 
 #### Pre-config
 1. Rename .env-example to .env
-2. Complete the variables in .env
+2. Setup the variables in .env
 3. In project directory:
 
 #### Unix
