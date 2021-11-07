@@ -66,9 +66,9 @@ Getting token form endpoint:
 ## Github OAuth2 Configuration
 Register a new OAuth application in github:
 1. Set "Homepage URL" and "Application name"
-2. Set callback url:  
+2. Set callback url  
   
-Example:
+Callback url example:
 ```
 http://127.0.0.1:8000/auth/github/callback
 ```
